@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxMoyaObjectMapper_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdu-or-1ce">
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="暂无数据" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="li4-Ub-F9E">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noU-Uf-QWL">
+                                        <color key="backgroundColor" red="1" green="0.17862738689999999" blue="0.045424118919999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="V0O-IY-dxq"/>
+                                        </constraints>
+                                        <state key="normal" title="获取数据">
+                                            <color key="titleColor" red="0.98133680560000003" green="0.98133680560000003" blue="0.98133680560000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="queryDataClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iba-H9-a77"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="li4-Ub-F9E" firstAttribute="top" secondItem="zdu-or-1ce" secondAttribute="top" constant="20" id="A8Q-zZ-Mik"/>
+                                    <constraint firstAttribute="trailing" secondItem="noU-Uf-QWL" secondAttribute="trailing" constant="10" id="AS3-yI-CAI"/>
+                                    <constraint firstItem="noU-Uf-QWL" firstAttribute="top" secondItem="li4-Ub-F9E" secondAttribute="bottom" constant="10" id="Oba-Yo-8os"/>
+                                    <constraint firstItem="li4-Ub-F9E" firstAttribute="leading" secondItem="zdu-or-1ce" secondAttribute="leading" constant="10" id="ePC-4I-6m9"/>
+                                    <constraint firstItem="noU-Uf-QWL" firstAttribute="leading" secondItem="zdu-or-1ce" secondAttribute="leading" constant="10" id="h0g-uC-z2Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="li4-Ub-F9E" secondAttribute="trailing" constant="10" id="hRQ-NX-odd"/>
+                                    <constraint firstAttribute="bottom" secondItem="noU-Uf-QWL" secondAttribute="bottom" constant="10" id="qNY-GQ-Xg9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zdu-or-1ce" secondAttribute="trailing" id="0qA-Gb-kuj"/>
+                            <constraint firstItem="zdu-or-1ce" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="RWa-tu-oU3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="zdu-or-1ce" secondAttribute="bottom" id="b94-nm-nfT"/>
+                            <constraint firstItem="zdu-or-1ce" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dk5-3e-9wQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showTextView" destination="li4-Ub-F9E" id="17e-sY-t0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

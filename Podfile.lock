@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Moya (8.0.0-beta.3):
+    - Moya/Core (= 8.0.0-beta.3)
+  - Moya-ObjectMapper/Core (2.0.1):
+    - Moya (= 8.0.0-beta.3)
+    - ObjectMapper (= 2.2.0)
+  - Moya-ObjectMapper/RxSwift (2.0.1):
+    - Moya-ObjectMapper/Core
+    - Moya/RxSwift
+    - RxSwift
+  - Moya/Core (8.0.0-beta.3):
+    - Alamofire (~> 4.0)
+    - Result (~> 3.0)
+  - Moya/RxSwift (8.0.0-beta.3):
+    - Moya/Core
+    - RxSwift (~> 3.0)
+  - ObjectMapper (2.2.0)
+  - Result (3.0.0)
+  - RxSwift (3.0.0)
+
+DEPENDENCIES:
+  - Moya (from `https://github.com/Moya/Moya`)
+  - Moya-ObjectMapper/RxSwift (from `https://github.com/ivanbruel/Moya-ObjectMapper`)
+  - RxSwift (from `https://github.com/ReactiveX/RxSwift`)
+
+EXTERNAL SOURCES:
+  Moya:
+    :git: https://github.com/Moya/Moya
+  Moya-ObjectMapper:
+    :git: https://github.com/ivanbruel/Moya-ObjectMapper
+  RxSwift:
+    :git: https://github.com/ReactiveX/RxSwift
+
+CHECKOUT OPTIONS:
+  Moya:
+    :commit: 0fe1ae3727a576915db5d5f8256822dfef28993a
+    :git: https://github.com/Moya/Moya
+  Moya-ObjectMapper:
+    :commit: f84b344f52af474978585f225dbf67f7f98fddb9
+    :git: https://github.com/ivanbruel/Moya-ObjectMapper
+  RxSwift:
+    :commit: aadf4807fd644bc0277fdecda9bf84493fa27cb1
+    :git: https://github.com/ReactiveX/RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Moya: bfa17ec7a1ffd76609921bec33ef4986844be43d
+  Moya-ObjectMapper: 0fb52679d545e2c687d2ba128c42eb4047844a29
+  ObjectMapper: 4060d739febae11ab0c6af8d786f98667c82e1bd
+  Result: 1b3e431f37cbcd3ad89c6aa9ab0ae55515fae3b6
+  RxSwift: 931443655decc4aec2ff4e4197bf1720c2d49c57
+
+PODFILE CHECKSUM: 6c1aa91cab473a0633531b984d99591c12692931
+
+COCOAPODS: 1.1.0.rc.2
